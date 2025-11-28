@@ -42,10 +42,6 @@ public class Main {
     }
 
     // Method 2 for checking if a string conforms to a regex: using Matcher.find
-    // TODO: Modify this method to return a list of all email addresses contained in the
-    //       input string that end with "@mail.utoronto.ca" or "@utoronto.ca" with at least one
-    //       character before the "@" symbol. The email addresses should be in the order they
-    //       appear in the string.
 
     /**
      * Returns a list of email addresses that occur in a given string.
@@ -64,9 +60,6 @@ public class Main {
 
     // Method 3 for checking if a string conforms to a regex: using String.matches
 
-    // TODO: Modify this method to check whether or not the string contains the same capital letter
-    //       twice. For example "Amazing Apple" contains "A" twice. If the string does repeat the same
-    //       capital letter twice, the method should return true. Otherwise it should return false.
 
     /**
      * Checks whether a given string contains the same capital letter twice.
@@ -74,6 +67,6 @@ public class Main {
      * @return whether str contains the same capital letter twice.
      */
     public static boolean checkForDoubles(String str) {
-        return str.matches("replace with correct regex");
+        return str.matches(".*([A-Z]).*\\1.*");
     }
 }
